@@ -28,9 +28,9 @@ function FAQ() {
     <section className="relative" id="faq">
       <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
         <h2 className="text-2xl md:text-3xl font-serif text-[#2E2E2E]">Frequently Asked Questions</h2>
-        <div className="mt-8 divide-y divide-gray-200">
+        <div className="mt-8 divide-y divide-gray-200 bg-white/60 rounded-2xl border border-gray-200 overflow-hidden">
           {faqs.map((f, i) => (
-            <div key={i} className="py-5">
+            <div key={i} className="py-5 px-6">
               <h3 className="font-medium text-[#2E2E2E]">{f.q}</h3>
               <p className="mt-1 text-gray-700">{f.a}</p>
             </div>

@@ -48,15 +48,22 @@ function Hero() {
           </div>
 
           <div className="md:col-span-5">
-            <div className="relative">
-              <div className="absolute inset-0 rounded-3xl bg-[linear-gradient(135deg,rgba(201,169,110,0.18),transparent_40%)]" />
-              <div className="relative rounded-3xl border border-gray-200 bg-white/80 backdrop-blur px-6 py-8 shadow-[0_10px_40px_rgba(0,0,0,0.06)]">
-                <div className="text-sm uppercase tracking-wider text-gray-500 mb-2">Quiet Luxury • Modern Tech • Wellbeing</div>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start gap-3"><span className="mt-1 w-2 h-2 rounded-full bg-[#C9A96E]" />Calm, focused workflows powered by AI</li>
-                  <li className="flex items-start gap-3"><span className="mt-1 w-2 h-2 rounded-full bg-[#C9A96E]" />Personal boundaries that protect your energy</li>
-                  <li className="flex items-start gap-3"><span className="mt-1 w-2 h-2 rounded-full bg-[#C9A96E]" />A plan for sustainable momentum</li>
-                </ul>
+            <div className="relative rounded-3xl overflow-hidden border border-gray-200 bg-white/60 backdrop-blur shadow-[0_10px_40px_rgba(0,0,0,0.06)]">
+              <img
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop"
+                alt="Calm, minimalist workspace with soft light"
+                className="w-full h-80 md:h-[28rem] object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-white/10 to-transparent" />
+              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                <div className="text-xs md:text-sm text-gray-700 bg-white/70 backdrop-blur px-3 py-1.5 rounded-full border border-white/60">
+                  Quiet luxury • Modern tech • Wellbeing
+                </div>
+                <div className="hidden sm:flex items-center gap-2 bg-white/70 backdrop-blur px-2.5 py-1.5 rounded-full border border-white/60">
+                  <span className="w-2 h-2 rounded-full bg-[#C9A96E]" />
+                  <span className="text-xs text-gray-700">Soft focus</span>
+                </div>
               </div>
             </div>
           </div>
